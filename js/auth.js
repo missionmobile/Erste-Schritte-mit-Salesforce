@@ -16,8 +16,8 @@ jQuery(document).ready(function() {
     }
     // Browser
     else {
-        var loginUrl = "https://test.salesforce.com/";
-        var consumerKey = "3MVG9sLbBxQYwWqvigZkG451mObIGhTK1gFuysVU9nHNT7ora_Rtlvcgddvq8d4lRIOqp2p4RFg1mNdZaebRp";
+        var loginUrl = "https://test.salesforce.com";
+        var consumerKey = "yourConsumerKey";
         var callbackUrl = "http://localhost:9000";
 
         // Instantiating forcetk ClientUI
@@ -26,9 +26,9 @@ jQuery(document).ready(function() {
                  console.log('OAuth success!');
                         console.log(oauthClient.oauthResponse);
                  creds = {
-                    clientId: "3MVG9sLbBxQYwWqvigZkG451mObIGhTK1gFuysVU9nHNT7ora_Rtlvcgddvq8d4lRIOqp2p4RFg1mNdZaebRp",
-                    loginUrl: "https://test.salesforce.com/",
-                    proxyUrl: "http://localhost:9000/",
+                    clientId: consumerKey,
+                    loginUrl: loginUrl,
+                    proxyUrl: callbackUrl,
                     accessToken: oauthClient.oauthResponse.access_token,
                     instanceUrl: oauthClient.oauthResponse.instance_url
                 };
