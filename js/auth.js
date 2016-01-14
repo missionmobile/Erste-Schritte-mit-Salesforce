@@ -16,7 +16,7 @@ jQuery(document).ready(function() {
     }
     // Browser
     else {
-        var loginUrl = "https://test.salesforce.com";
+        var loginUrl = "https://test.salesforce.com/";
         var consumerKey = "yourConsumerKey";
         var callbackUrl = "http://localhost:9000";
 
