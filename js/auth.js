@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
     else {
         var loginUrl = "https://test.salesforce.com/";
         var consumerKey = "yourConsumerKey";
-        var callbackUrl = "http://localhost:9000";
+        var callbackUrl = "http://localhost:9000/";
 
         // Instantiating forcetk ClientUI
         var oauthClient = new ForceOAuth(loginUrl, consumerKey, callbackUrl,
